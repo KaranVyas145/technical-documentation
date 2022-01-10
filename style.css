@@ -20,9 +20,8 @@
 }
 
 #navbar header {
-  font-size: var(--primary-font-size);
   padding: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   margin: 0;
 }
 
@@ -91,6 +90,11 @@ table td:nth-child(2){
     color: red;
 }
 
+header{
+    font-size: var(--primary-font-size);
+    font-weight: bold;
+}
+
 @media(max-width: 815px) {
     #navbar{
         background-color: white;
@@ -113,5 +117,20 @@ table td:nth-child(2){
         margin-left: 0;
         margin-top: 275px;
         margin-right: 0;
+    }
+}
+
+@media (max-width:450px) {
+    :root{
+        --primary-font-size:1.5rem;
+        --secondary-font-size:1rem;
+    }
+
+    code{
+        font-size: 0.8rem;
+    }
+
+    #main-doc{
+        padding: 0;
     }
 }
