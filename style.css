@@ -8,7 +8,6 @@
 /* Navigation Bar */
 
 #navbar {
-  /* border: 1px solid red; */
   font-family: "Times New Roman", Times, serif;
   width: 300px;
   height: 100%;
@@ -54,12 +53,10 @@
   margin-right: 10px;
   padding:0 20px;
   font-family: 'Times New Roman', Times, serif;
-  /* border: 1px solid green; */
   max-width: 100%;
 }
 
 #main-doc .main-section{
-    /* border: 1px solid blue; */
     padding: 10px;
     border-bottom: 2px solid black;
 
@@ -72,8 +69,9 @@
 #main-doc .main-section article{
     font-size: var(--secondary-font-size);
     margin: 15px;
-    /* border: 1px solid black; */
 }
+
+/* Formating the code sections  */
 
 code{
   display: block;
@@ -86,6 +84,8 @@ code{
   width: 80%;
 }
 
+/* Adding colors to the right column in Data Types section  */
+
 table td:nth-child(2){
     color: red;
 }
@@ -94,6 +94,8 @@ header{
     font-size: var(--primary-font-size);
     font-weight: bold;
 }
+
+/* Media Queries to make the website responsive  */
 
 @media(max-width: 815px) {
     #navbar{
