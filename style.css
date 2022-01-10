@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-font-size: 2rem;
+    --secondary-font-size:1.2rem;
+}
+
+#navbar{
+    border: 1px solid red;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 30%;
+}
+
+#navbar header{
+    font-size: var(--primary-font-size);
+    padding: 10px;
+}
+
+
+#navbar li{
+    font-size: var(--secondary-font-size);
+    border: 1px solid black;
+    padding: 10px;
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: black;
+}
