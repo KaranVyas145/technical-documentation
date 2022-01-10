@@ -1,33 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
+
+
+:root {
+  --primary-font-size: 2rem;
+  --secondary-font-size: 1.2rem;
 }
 
-:root{
-    --primary-font-size: 2rem;
-    --secondary-font-size:1.2rem;
+/* Navigation Bar */
+
+#navbar {
+  /* border: 1px solid red; */
+  font-family: "Times New Roman", Times, serif;
+  max-width: 290px;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 2px solid black;
 }
 
-#navbar{
-    border: 1px solid red;
-    font-family: 'Times New Roman', Times, serif;
-    max-width: 30%;
+#navbar header {
+  font-size: var(--primary-font-size);
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
 
-#navbar header{
+#navbar ul {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  font-size: var(--secondary-font-size);
+  border-bottom: 1px solid black;
+  padding: 10px;
+  list-style: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main content  */
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  margin-right: 10px;
+  padding:0 20px;
+  font-family: 'Times New Roman', Times, serif;
+  /* border: 1px solid green; */
+  max-width: 100%;
+}
+
+#main-doc .main-section{
+    /* border: 1px solid blue; */
+    padding: 10px;
+    border-bottom: 2px solid black;
+
+}
+
+#main-doc .main-section header{
     font-size: var(--primary-font-size);
-    padding: 10px;
 }
 
-
-#navbar li{
+#main-doc .main-section article{
     font-size: var(--secondary-font-size);
-    border: 1px solid black;
-    padding: 10px;
-    list-style: none;
+    margin: 15px;
+    /* border: 1px solid black; */
 }
 
-#navbar li a{
-    text-decoration: none;
-    color: black;
+code{
+  display: block;
+  padding: 15px;
+  margin: 10px;
+  background-color: gainsboro;
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+  width: 70%;
+}
+
+table td:nth-child(2){
+    color: red;
 }
